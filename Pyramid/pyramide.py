@@ -2,9 +2,9 @@ import pyautogui as auto
 from python_imagesearch.imagesearch import imagesearch as search
 import time
 
-msg = "catJAM"
+msg = "BibleThump"
 
-pos = search("./msg.png")
+pos = search("./msg2.png")
 if pos[0] == -1:
 	exit("no chat found")
 auto.moveTo(pos)
@@ -25,5 +25,4 @@ for i in range(0, 5):
 		auto.keyUp("space", _pause=False)
 	auto.keyDown("enter", _pause=False)
 	auto.keyUp("enter", _pause=False)
-	time.sleep(0.2)
 exit()
